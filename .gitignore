@@ -107,3 +107,6 @@ typings/
 
 # Output of 'npm pack'
 *.tgz
+
+# Jetbrains
+.idea
