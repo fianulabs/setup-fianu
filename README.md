@@ -9,14 +9,14 @@ Setup the `gh` CLI:
 
 ```yaml
 steps:
-- uses: fianulabs/actions@main
+- uses: fianulabs/setup-fianu@main
 ```
 
 A specific version of the `fianu` CLI can be installed:
 
 ```yaml
 steps:
-- uses: fianulabs/actions@main
+- uses: fianulabs/setup-fianu@main
   with:
     version: ${{ secrets.FIANU_VERSION }}
 ```
