@@ -1,4 +1,4 @@
-# Copyright 2020 Google LLC
+# Copyright 2023 Fianu Labs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,39 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Set up gcloud Cloud SDK environment
-author: Google LLC
+name: Set up fianu CLI
+author: Fianu Labs
 description: |-
-  Downloads, installs, and configures a Google Cloud SDK environment.
-  Adds the `gcloud` CLI command to the $PATH.
+  Adds the `fianu` CLI command to the $PATH.
 
 inputs:
-  skip_install:
-    description: |-
-      Skip installation of the gcloud SDK and use the system-supplied version
-      instead. The "version" input will be ignored.
-    default: false
-    required: false
-
   version:
     description: |-
-      Version or version constraint of the gcloud SDK to install. If
-      unspecified, it will accept any installed version of the gcloud SDK. If
-      set to "latest", it will download the latest available SDK. If set to a
+      Version or version constraint of the fianu CLI to install. If
+      unspecified, it will accept any installed version of the cli. If
+      set to "latest", it will download the latest available CLI. If set to a
       version constraint, it will download the latest available version that
       matches the constraint. Examples: "290.0.1" or ">= 197.0.1".
     default: 'latest'
-    required: false
-
-  project_id:
-    description: |-
-      ID of the Google Cloud project. If provided, this will configure gcloud to
-      use this project ID by default for commands. Individual commands can still
-      override the project using the --project flag which takes precedence.
-    required: false
-
-  install_components:
-    description: List of Cloud SDK components to install
     required: false
 
 branding:
