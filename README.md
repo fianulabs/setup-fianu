@@ -24,6 +24,8 @@ steps:
 ## Inputs
 The actions supports the following inputs:
 
+
+
 - `version`: The version of `fianu` to install, defaulting to `latest`
 
 ## License
